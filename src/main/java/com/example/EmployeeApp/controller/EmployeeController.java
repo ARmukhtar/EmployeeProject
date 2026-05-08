@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -50,20 +50,20 @@ public class EmployeeController {
     )
 
     @GetMapping("employee/{id}")
-     @PreAuthorize("hasAuthority('user')")
+//     @PreAuthorize("hasAuthority('user')")
     public ResponseEntity<?> getEmployee(@PathVariable int id) {
         return employeeService.getEmployee(id);
     }
 
     @GetMapping("allemployees")
-    @PreAuthorize("hasAuthority('admin')")
+//    @PreAuthorize("hasAuthority('admin')")
     public ResponseEntity<List<Employee>> getEmployees() {
         return employeeService.getEmployees();
     }
 
 
     @PostMapping("updateemployee/{id}")
-    @PreAuthorize("hasAuthority('user')")
+//    @PreAuthorize("hasAuthority('user')")
 
     public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @RequestBody EmployeeDto employeeDTO) {
         return employeeService.updateEmployee(id, employeeDTO);
