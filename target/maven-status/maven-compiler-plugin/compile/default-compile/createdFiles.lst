@@ -1,0 +1,13 @@
+com\example\EmployeeApp\repository\EmployeeRepo.class
+com\example\EmployeeApp\controller\EmployeeController.class
+com\example\EmployeeApp\repository\DepartmentRepo.class
+com\example\EmployeeApp\controller\DepartmentController.class
+com\example\EmployeeApp\model\Employee.class
+com\example\EmployeeApp\model\Department.class
+com\example\EmployeeApp\service\EmailService.class
+com\example\EmployeeApp\dto\EmployeeInfo.class
+com\example\EmployeeApp\EmployeeAppApplication.class
+com\example\EmployeeApp\service\DepartmentService.class
+com\example\EmployeeApp\service\EmployeeService.class
+com\example\EmployeeApp\dto\EmailDetails.class
+com\example\EmployeeApp\dto\EmployeeDto.class
