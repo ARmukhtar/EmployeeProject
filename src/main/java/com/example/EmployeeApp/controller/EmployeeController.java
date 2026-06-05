@@ -32,7 +32,7 @@ public class EmployeeController {
             description = "Http Status 201 Created"
     )
     // CORS (Cross Origin Request Sharing)
-    @CrossOrigin(origins = "http://localhost:3000")
+    // @CrossOrigin(origins = "http://localhost:3000")
 
     @PostMapping("newEmployee")
     public ResponseEntity<Employee> newEmployee(@RequestBody Employee employeeDTO) {
